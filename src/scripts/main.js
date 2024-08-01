@@ -1,9 +1,20 @@
 // Imports go first
 
+import { makePottery} from './PotteryWheel.js';
+
 
 
 // Make 5 pieces of pottery at the wheel
-let mug = makePottery()
+let mug = makePottery("Mug", 1, 5);
+let bowl = makePottery("bowl", 2,6);
+let plate = makePottery("plate",1,1);
+let cup = makePottery("cup", 2,4);
+let bottle = makePottery("bottle",3,5);
+console.log(mug);
+console.log(bowl);
+console.log(plate);
+console.log(cup);
+console.log(bottle);
 
 
 // Fire each piece of pottery in the kiln
