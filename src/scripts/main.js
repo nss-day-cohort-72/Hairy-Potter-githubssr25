@@ -2,6 +2,7 @@
 
 import { makePottery} from './PotteryWheel.js';
 import {firePottery} from './Klin.js';
+import {toSellOrNotToSell } from './PotteryCatalog.js'
 
 
 
@@ -28,6 +29,13 @@ let bottleFire = firePottery(bottle, 2210);
 
 
 // Determine which ones should be sold, and their price
+
+let toSellMug = toSellOrNotToSell(mug);
+let toSellBowl = toSellOrNotToSell(bowl);
+let toSellPlate = toSellOrNotToSell(plate);
+let toSellCup = toSellOrNotToSell(cup);
+let toSellBottle = toSellorNotToSell(bottle);
+
 
 
 // Invoke the component function that renders the HTML list
